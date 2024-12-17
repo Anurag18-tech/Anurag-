@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Product Reviews</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: skyblue;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .login {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .login input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .login button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #333;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login button:hover {
+            background: #555;
+        }
+        .review {
+            margin: 20px 0;
+        }
+        .review img {
+            width: 80%;
+            height: auto;
+            max-height: 500px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background-color: pink;
+        }
+        .review h3 {
+            margin-bottom: 10px;
+           
+        }
+        .review-content {
+            margin-bottom: 20px;
+            display: inline-block;
+            width: auto;
+            text-align: center;
+            width: 80%;
+        }
+        .review-content p {
+        display: inline-block;
+        width: 80%;
+        max-width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        }
+        .submit-review {
+            margin-top: 20px;
+        }
+        .submit-review textarea {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .submit-review button {
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .submit-review button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tech Product Reviews</h1>
+    </header>
+    <nav>
+        <a href="#login">Login</a>
+        <a href="#page1">Smartphones</a>
+        <a href="#page2">Laptops</a>
+        <a href="#page3">Smartwatches</a>
+        <a href="#page4">Gaming Gadgets</a>
+    </nav>
+
+    <div id="login" class="container">
+        <div class="login">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <div id="page1" class="container" style="display: none;">
+        <div class="review">
+            <h1>Smartphones</h1>
+            <div class="review-content">
+                <img src="Smartphone Infinix Note 30 VIP 5G _ 12Go _ 256Go _ Blanc.jpg" alt="Product 1 Image 1">
+                </div>
+                <div class="review-content p">
+                <p><b><big>Detailed review of Infinix Smartphone -</big></b> The Infinix Note 30 5G is a well-rounded mid-range smartphone offering solid performance and features. 
+                  </p>
+                 </div>
+            <div class="review-content">
+                <img src="Two iPhone 14 Pro Mockup.jpg"  alt="Product 1 Image 2">
+                </div>
+                <div class="review-content p">
+                <p><b><big>Detailed review of iPhone -</big></b>The iPhone 14 Pro is widely regarded as a major refinement of Apple's premium smartphone line, focusing on enhancing the experience with innovative new features.</p>
+            </div>
+            <div class="review-content">
+                <img src="Oppo Reno4 Pro.jpg" alt="Product 1 Image 3">
+                </div>
+                <div class="review-content p">
+                <p><b><big>Detailed review of Oppo Smartphone -</big></b>The Oppo Reno4 5G offers solid performance and features, making it a strong choice in the mid-range smartphone category. It has a sleek design, with a shiny, premium-looking rear that is comfortable to hold, and a 6.4-inch AMOLED display that delivers vibrant colors, good brightness.</p>
+            </div>
+            <div class="submit-review">
+                <h4>Submit Your Review</h4>
+                <textarea placeholder="Write your review here..."></textarea>
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="page2" class="container" style="display: none;">
+        <div class="review">
+            <h1>Laptops</h1>
+            <div class="review-content">
+                <img src="5ed78b7a-eb10-451f-a851-a48199dbd38f.jpg" alt="Product 2 Image 1">
+                </div>
+                <div class="review-content p">
+                <p><b><big> Detailed review of Asus Laptop - </big></b>This laptop is praised for being light, thin, and powerful, offering a solid balance of features and performance at a reasonable price. It comes with a bright 15.6-inch display and decent processing power, including Intel Core i7 options. However, its battery life could be better, and the keyboard may not suit everyone​.</p>
+            </div>
+            <div class="review-content">
+                <img src="download (2).jpg" alt="Product 2 Image 2">
+                </div>
+                <div class="review-content p">
+                <p><b><big> Detailed review of HP Laptop -</big></b>The 16-inch model is recommended for those seeking a larger screen, especially for tasks like gaming, media consumption, or content creation. The spacious display and stunning audio performance make it stand out, offering a cinema-like experience.</p>
+            </div>
+            <div class="review-content">
+                <img src="download (4).jpg" alt="Product 2 Image 3">
+                </div>
+                <div class="review-content p">
+                <p><b><big>Detailed review of Apple Laptop - </big></b>The MacBook Pro 14 offers outstanding build quality with a sleek design, and it's powered by the M4 chip, which boosts both performance and efficiency.</p>
+            </div>
+            <div class="submit-review">
+                <h4>Submit Your Review</h4>
+                <textarea placeholder="Write your review here..."></textarea>
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="page3" class="container" style="display: none;">
+        <div class="review">
+            <h1>Smartwatches</h1>
+            <div class="review-content">
+                <img src="Smartwatch PNG Images (Transparent HD Photo Clipart).jpg" alt="Product 3 Image 1">
+                </div>
+                <div class="review-content p">
+                <p><b><big>Detailed Review of Smartwatch 1- </big></b>This rugged, high-performance smartwatch is favored for its titanium build and large, bright OLED display, which reaches up to 3000 nits, making it ideal for outdoor use.</p>
+            </div>
+            <div class="review-content">
+                <img src="Heart Rate Monitor Smart Watch.jpg" alt="Product 3 Image 2">
+                </div>
+                <div class="review-content p">
+                <p><b><big>Detailed Review of Smartwatch 2 - </big></b>The Apple Watch remains a top choice for iPhone users. It offers impressive heart rate tracking, with features like ECG functionality, high and low heart rate alerts, and irregular rhythm notifications. Although its blood oxygen sensor is currently disabled in the U.S. due to a legal issue, it's still highly praised for its accuracy and integration with iOS apps​.</p>
+            </div>
+            <div class="review-content">
+                <img src="Bluetooth Smart Watch with Sleep Monitor & Fitness Tracker - Dark Blue.jpg" alt="Product 3 Image 3">
+                </div>
+                <div class="review-content p">
+                <p><b><big>Detailed review of Smartwatch 3-</big></b>Powered by Fitbit's excellent sleep algorithms, it tracks sleep stages (light, deep, REM) and provides insights into sleep quality with daily readiness score.</p>
+            </div>
+            <div class="submit-review">
+                <h4>Submit Your Review</h4>
+                <textarea placeholder="Write your review here..."></textarea>
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="page4" class="container" style="display: none;">
+        <div class="review">
+            <h1>Gaming Gadgets</h1>
+            <div class="review-content">
+                <img src="FIFINE USB Podcast Microphone for Recording Streaming, Condenser Computer Gaming Mic for PC Mac PS4_ Headphone Output&Volume Control, Mic Gain Control, Mute Button for Vocal, YouTube. (K678)" alt="Product 4 Image 1">
+                </div>
+                <div class="review-content p">
+                <p> <b><big>Detailed review of Recording Microphone -</big></b> This USB microphone is widely appreciated for its rich audio quality, easy-to-use software interface, and solid build. It offers features like gain control, a pop filter, and a limiter.</p>
+            </div>
+            <div class="review-content">
+                <img src="Megaport Komplett Set Gaming PC.jpg" alt="Product 4 Image 2">
+                </div>
+                <div class="review-content p">
+                <p><b><big>Detailed review of Gaming PC- </big></b>Known for its powerful configuration, this PC features an Intel i9 processor and an RTX 4080 graphics card, making it perfect for 4K gaming. It has ample space for future upgrades, though its case design is somewhat basic.</p>
+            </div>
+            <div class="review-content">
+                <img src="White PS5 Controller With White LED Backlit Buttons - GameTraderZero.jpg" alt="Product 4 Image 3">
+                <div class="review-content p">
+                <p><b><big>Detailed review of Gaming Controller-</big></b>Widely praised for its excellent haptic feedback, adaptive triggers, and immersive gaming experience. Its feel is revolutionary for standard gameplay.</p>
+            </div>
+        </div>
+            <div class="submit-review">
+                <h4>Submit Your Review</h4>
+                <textarea placeholder="Write your review here..."></textarea>
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const usernameRegex = /^[a-zA-Z]+$/;
+            const passwordRegex = /^[0-9]+$/;
+
+            if (!usernameRegex.test(username)) {
+                alert('Username must be alphabetical.');
+                return;
+            }
+
+            if (!passwordRegex.test(password)) {
+                alert('Password must be numeric.');
+                return;
+            }
+
+            alert('Login successful!');
+            document.getElementById('login').style.display = 'none';
+            document.getElementById('page1').style.display = 'block';
+        }
+
+        // Add navigation functionality
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = link.getAttribute('href').substring(1);
+                if (document.getElementById('login').style.display !== 'none' && target !== 'login') {
+                    alert('Please login first!');
+                    return;
+                }
+
+                document.querySelectorAll('.container').forEach(page => {
+                    page.style.display = 'none';
+                });
+
+                if (target === 'login') {
+                    document.getElementById('login').style.display = 'block';
+                } else {
+                    document.getElementById(target).style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
